@@ -1,0 +1,2793 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)file:///C:/Users/HP/Desktop/first.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APNI RASOI | Authentic Indian Restaurant - 10+ Years of Excellence</title>
+    <link href="./apni rasoi_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./apni rasoi_files/all.min.css">
+    <style>
+        :root {
+            --primary: #E23744;
+            --primary-dark: #C42430;
+            --primary-light: #FFF0F1;
+            --secondary: #2D2D2D;
+            --text: #1C1C1C;
+            --text-light: #696969;
+            --text-lighter: #9C9C9C;
+            --bg: #FFFFFF;
+            --bg-light: #F8F8F8;
+            --border: #E8E8E8;
+            --success: #24963E;
+            --star: #FF7E8B;
+            --shadow: 0 2px 8px rgba(28,28,28,0.08);
+            --shadow-hover: 0 4px 16px rgba(28,28,28,0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 0 20px;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo i {
+            font-size: 28px;
+        }
+
+        .nav-center {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .search-box {
+            position: relative;
+            width: 400px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 16px 10px 40px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(226, 55, 68, 0.1);
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-lighter);
+        }
+
+        .location-pill {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .location-pill:hover {
+            border-color: var(--primary);
+        }
+
+        .location-pill i {
+            color: var(--primary);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn-large {
+            padding: 14px 32px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://kimi-web-img.moonshot.cn/img/static.vecteezy.com/c1f015280175dcf8f5e9472dc575a3a0671dcf94.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            height: 100%;
+        }
+
+        .hero-left {
+            flex: 1;
+            color: white;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(226, 55, 68, 0.2);
+            border: 1px solid rgba(226, 55, 68, 0.4);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #ff6b7a;
+        }
+
+        .hero-badge i {
+            color: #ffd700;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 32px;
+            max-width: 500px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-right {
+            width: 380px;
+            flex-shrink: 0;
+        }
+
+        .hero-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .hero-card-img {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .hero-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-card-body {
+            padding: 24px;
+        }
+
+        .hero-card-rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .rating-badge {
+            background: var(--success);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .rating-count {
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .hero-card-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .info-row i {
+            width: 16px;
+            color: var(--primary);
+        }
+
+        .hero-card-price {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .hero-card-price strong {
+            color: var(--text);
+            font-size: 16px;
+        }
+
+        /* Tabs */
+        .tabs-section {
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 64px;
+            z-index: 100;
+        }
+
+        .tabs-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+
+        .tab {
+            padding: 16px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-light);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+            background: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .tab:hover {
+            color: var(--primary);
+        }
+
+        .tab.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        /* Main Content */
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            gap: 40px;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 340px;
+            flex-shrink: 0;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: var(--primary);
+        }
+
+        /* Menu Section */
+        .menu-filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .filter-chip {
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .filter-chip:hover, .filter-chip.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .menu-category {
+            margin-bottom: 40px;
+        }
+
+        .category-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .category-count {
+            font-size: 14px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+        }
+
+        .menu-item-img {
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            background: var(--bg-light);
+        }
+
+        .menu-item-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover .menu-item-img img {
+            transform: scale(1.05);
+        }
+
+        .menu-item-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: var(--success);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            z-index: 2;
+        }
+
+        .menu-item-body {
+            padding: 16px;
+        }
+
+        .menu-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 8px;
+        }
+
+        .menu-item-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .menu-item-price {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .menu-item-desc {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .menu-item-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .veg-badge {
+            width: 16px;
+            height: 16px;
+            border: 2px solid var(--success);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+        }
+
+        .veg-badge::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+        }
+
+        .non-veg-badge {
+            width: 16px;
+            height: 16px;
+            border: 2px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+        }
+
+        .non-veg-badge::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .add-btn {
+            padding: 6px 20px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: white;
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .add-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* About Section */
+        .about-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+
+        .about-text {
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 24px;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: var(--bg-light);
+            border-radius: 10px;
+        }
+
+        .highlight-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--primary-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 20px;
+        }
+
+        .highlight-text {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .highlight-sub {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        /* Reviews */
+        .review-summary {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 24px;
+            padding: 24px;
+            background: var(--bg-light);
+            border-radius: 12px;
+        }
+
+        .review-big-rating {
+            text-align: center;
+        }
+
+        .review-big-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--success);
+            line-height: 1;
+        }
+
+        .review-big-stars {
+            color: var(--star);
+            font-size: 18px;
+            margin-top: 4px;
+        }
+
+        .review-big-count {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-top: 4px;
+        }
+
+        .review-bars {
+            flex: 1;
+        }
+
+        .review-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .review-bar-label {
+            font-size: 13px;
+            font-weight: 600;
+            width: 40px;
+        }
+
+        .review-bar-track {
+            flex: 1;
+            height: 6px;
+            background: var(--border);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .review-bar-fill {
+            height: 100%;
+            background: var(--success);
+            border-radius: 3px;
+        }
+
+        .review-bar-count {
+            font-size: 12px;
+            color: var(--text-light);
+            width: 30px;
+            text-align: right;
+        }
+
+        .review-card {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 12px;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .reviewer-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), #ff6b6b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .reviewer-info h4 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .reviewer-info p {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        .review-rating {
+            background: var(--success);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .review-text {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .review-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .review-tag {
+            padding: 4px 10px;
+            background: var(--bg-light);
+            border-radius: 4px;
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .gallery-item {
+            aspect-ratio: 4/3;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item.more {
+            background: rgba(0,0,0,0.6);
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-item.more::after {
+            content: '+24';
+        }
+
+        /* Sidebar */
+        .sidebar-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .sidebar-info {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .sidebar-row {
+            display: flex;
+            align-items: start;
+            gap: 12px;
+        }
+
+        .sidebar-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--primary-light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .sidebar-text h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .sidebar-text p {
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        .sidebar-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 16px 0;
+        }
+
+        .timing-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .timing-row:last-child {
+            border-bottom: none;
+        }
+
+        .timing-day {
+            font-weight: 500;
+        }
+
+        .timing-hours {
+            color: var(--text-light);
+        }
+
+        .timing-hours.open {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .map-placeholder {
+            height: 200px;
+            background: linear-gradient(135deg, #e8e8e8, #d0d0d0);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 8px;
+            color: var(--text-light);
+            margin-top: 16px;
+        }
+
+        .map-placeholder i {
+            font-size: 40px;
+            color: var(--primary);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #c42430);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .cta-title {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .cta-subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-white:hover {
+            background: #f0f0f0;
+        }
+
+        .btn-transparent {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-transparent:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--secondary);
+            color: white;
+            padding: 60px 20px 30px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-desc {
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.6;
+            max-width: 300px;
+        }
+
+        .footer-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-icon:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Order Modal */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            padding: 24px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .modal-close {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: none;
+            background: var(--bg-light);
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .modal-close:hover {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .modal-body {
+            padding: 24px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .cart-item-info h4 {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .cart-item-info p {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        .cart-item-price {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .cart-total-value {
+            color: var(--primary);
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .form-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(226, 55, 68, 0.1);
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--secondary);
+            color: white;
+            padding: 16px 24px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.4s ease;
+            z-index: 3000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .toast i {
+            color: var(--success);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .main {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+            }
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero-right {
+                width: 100%;
+                max-width: 400px;
+            }
+            .hero-stats {
+                justify-content: center;
+            }
+            .footer-top {
+                grid-template-columns: 1fr 1fr;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .search-box {
+                display: none;
+            }
+            .nav-center {
+                justify-content: flex-end;
+            }
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-top {
+                grid-template-columns: 1fr;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+            .cta-title {
+                font-size: 28px;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-light);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-lighter);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="file:///C:/Users/HP/Desktop/first.html#" class="logo">
+                <i class="fas fa-utensils"></i>
+                APNI RASOI
+            </a>
+            <div class="nav-center">
+                <div class="location-pill">
+                    <i class="fas fa-location-dot"></i>
+                    <span>Jammu, India</span>
+                    <i class="fas fa-chevron-down" style="font-size: 12px; color: var(--text-lighter);"></i>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for dishes, cuisines..." id="searchInput">
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="btn btn-outline" onclick="showLogin()">Log in</button>
+                <button class="btn btn-primary" onclick="showSignup()">Sign up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <i class="fas fa-crown"></i>
+                    10+ Years of Culinary Excellence
+                </div>
+                <h1>Welcome to <span>APNI RASOI</span></h1>
+                <p class="hero-subtitle">Experience authentic North Indian, Mughlai, and Tandoori delicacies crafted with love and tradition since 2014.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">4.5</div>
+                        <div class="stat-label">Rating</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">2k+</div>
+                        <div class="stat-label">Reviews</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">50+</div>
+                        <div class="stat-label">Dishes</div>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
+                    <button class="btn btn-primary btn-large" onclick="scrollToMenu()">
+                        <i class="fas fa-book-open"></i>
+                        View Menu
+                    </button>
+                    <button class="btn btn-outline btn-large" style="border-color: rgba(255,255,255,0.3); color: white;" onclick="openOrderModal()">
+                        <i class="fas fa-bag-shopping"></i>
+                        Order Online
+                    </button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-card">
+                    <div class="hero-card-img">
+                        <img src="./apni rasoi_files/c1f015280175dcf8f5e9472dc575a3a0671dcf94.jpg" alt="APNI RASOI Featured Dish">
+                    </div>
+                    <div class="hero-card-body">
+                        <div class="hero-card-rating">
+                            <span class="rating-badge"><i class="fas fa-star"></i> 4.5</span>
+                            <span class="rating-count">2,000+ ratings</span>
+                        </div>
+                        <div class="hero-card-info">
+                            <div class="info-row"><i class="fas fa-clock"></i> Open now - 11 AM to 11 PM</div>
+                            <div class="info-row"><i class="fas fa-location-dot"></i> Gandhi Nagar, Jammu</div>
+                            <div class="info-row"><i class="fas fa-phone"></i> +91 98765 43210</div>
+                        </div>
+                        <div class="hero-card-price">
+                            <strong>₹800</strong> for two (approx.)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <div class="tabs-section">
+        <div class="tabs-inner">
+            <button class="tab active" onclick="switchTab(&#39;overview&#39;)">Overview</button>
+            <button class="tab" onclick="switchTab(&#39;menu&#39;)">Order Online</button>
+            <button class="tab" onclick="switchTab(&#39;reviews&#39;)">Reviews</button>
+            <button class="tab" onclick="switchTab(&#39;photos&#39;)">Photos</button>
+            <button class="tab" onclick="switchTab(&#39;about&#39;)">About</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <div class="content">
+            
+            <!-- Overview Tab -->
+            <div id="overview" class="tab-content active">
+                <h2 class="section-title"><i class="fas fa-fire"></i> Popular Dishes</h2>
+                <div class="menu-grid" id="popularDishes">
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/04dc0e15d837b826b9bca19ab843a012e8924d46.jpg" alt="Butter Chicken" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Butter Chicken</div>
+                            <div class="menu-item-price">₹380</div>
+                        </div>
+                        <div class="menu-item-desc">Creamy tomato-based curry with tender chicken pieces</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Butter Chicken&#39;, 380)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/450b46b738fa1a91ee447977e43c0fda2d7410d3.jpg" alt="Paneer Tikka Masala" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Paneer Tikka Masala</div>
+                            <div class="menu-item-price">₹320</div>
+                        </div>
+                        <div class="menu-item-desc">Cottage cheese cubes in rich spiced gravy</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Paneer Tikka Masala&#39;, 320)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/1fa8cbdfba6abbc6a4ac89d25571d591b925a0f1.jpg" alt="Dal Makhani" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Dal Makhani</div>
+                            <div class="menu-item-price">₹240</div>
+                        </div>
+                        <div class="menu-item-desc">Creamy black lentils slow-cooked overnight</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Dal Makhani&#39;, 240)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/56d93d1ce8b64ffacc97fd0c5bd27de925c05274.jpg" alt="Chicken Biryani" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Chicken Biryani</div>
+                            <div class="menu-item-price">₹340</div>
+                        </div>
+                        <div class="menu-item-desc">Fragrant basmati rice with spiced chicken</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Chicken Biryani&#39;, 340)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/13ab82e0997dd270f3122859aff7d433d6e22fd7.jpg" alt="Mutton Biryani" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Mutton Biryani</div>
+                            <div class="menu-item-price">₹420</div>
+                        </div>
+                        <div class="menu-item-desc">Slow-cooked mutton with aromatic rice</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Mutton Biryani&#39;, 420)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/4a97c8348349cde4a33a51e2c5f0db8e8c89fa20.jpg" alt="Tandoori Chicken" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Tandoori Chicken</div>
+                            <div class="menu-item-price">₹360</div>
+                        </div>
+                        <div class="menu-item-desc">Whole chicken marinated in yogurt and spices</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Tandoori Chicken&#39;, 360)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <h2 class="section-title" style="margin-top: 40px;"><i class="fas fa-camera"></i> Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="./apni rasoi_files/5d8fa5ee070992863c2ab9b0fb7c29a6f8dce028.jpg" alt="Indian Thali"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/c17f4f2b9cfeb29ba4dd7c401c85ec6cdecccf08.jpg" alt="Food Platter"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/3bec7d6993b841bfc06c6348be0f06629436cd8c.jpg" alt="Indian Spread"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/2bbe2d015663e7ad441aafc46e2537ce2deb5efd.jpg" alt="Indian Feast"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/92f4160e7a147a2d022bd2a9b4b123464502dbdc.jpg" alt="Food Spread"></div>
+                    <div class="gallery-item more"></div>
+                </div>
+            </div>
+
+            <!-- Menu Tab -->
+            <div id="menu" class="tab-content">
+                <h2 class="section-title"><i class="fas fa-book-open"></i> Our Menu</h2>
+                
+                <div class="menu-filters">
+                    <button class="filter-chip active" onclick="filterMenu(&#39;all&#39;)">All</button>
+                    <button class="filter-chip" onclick="filterMenu(&#39;veg&#39;)">Veg</button>
+                    <button class="filter-chip" onclick="filterMenu(&#39;non-veg&#39;)">Non-Veg</button>
+                    <button class="filter-chip" onclick="filterMenu(&#39;biryani&#39;)">Biryani</button>
+                    <button class="filter-chip" onclick="filterMenu(&#39;tandoori&#39;)">Tandoori</button>
+                    <button class="filter-chip" onclick="filterMenu(&#39;dessert&#39;)">Desserts</button>
+                </div>
+
+                <div id="menuContainer">
+                    <div class="menu-category">
+                        <div class="category-title">
+                            North Indian
+                            <span class="category-count">6 items</span>
+                        </div>
+                        <div class="menu-grid">
+                            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/04dc0e15d837b826b9bca19ab843a012e8924d46.jpg" alt="Butter Chicken" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Butter Chicken</div>
+                            <div class="menu-item-price">₹380</div>
+                        </div>
+                        <div class="menu-item-desc">Creamy tomato-based curry with tender chicken pieces</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Butter Chicken&#39;, 380)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/450b46b738fa1a91ee447977e43c0fda2d7410d3.jpg" alt="Paneer Tikka Masala" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Paneer Tikka Masala</div>
+                            <div class="menu-item-price">₹320</div>
+                        </div>
+                        <div class="menu-item-desc">Cottage cheese cubes in rich spiced gravy</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Paneer Tikka Masala&#39;, 320)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/1fa8cbdfba6abbc6a4ac89d25571d591b925a0f1.jpg" alt="Dal Makhani" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Dal Makhani</div>
+                            <div class="menu-item-price">₹240</div>
+                        </div>
+                        <div class="menu-item-desc">Creamy black lentils slow-cooked overnight</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Dal Makhani&#39;, 240)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/129b1a84c583b710a66f071f54d012b056834fa6.jpg" alt="Palak Paneer" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Palak Paneer</div>
+                            <div class="menu-item-price">₹300</div>
+                        </div>
+                        <div class="menu-item-desc">Fresh spinach and cottage cheese curry</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Palak Paneer&#39;, 300)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/5b0ca12da5f6e23d07e3829e3b0ff4935f883cfa.jpg" alt="Kadhai Chicken" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Kadhai Chicken</div>
+                            <div class="menu-item-price">₹360</div>
+                        </div>
+                        <div class="menu-item-desc">Spicy chicken cooked in traditional kadhai</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Kadhai Chicken&#39;, 360)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/6f6d553fc2075a45409c8a9b597c7d6cbc6656a6.webp" alt="Malai Kofta" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Malai Kofta</div>
+                            <div class="menu-item-price">₹280</div>
+                        </div>
+                        <div class="menu-item-desc">Cottage cheese dumplings in creamy gravy</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Malai Kofta&#39;, 280)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                        </div>
+                    </div>
+                
+                    <div class="menu-category">
+                        <div class="category-title">
+                            Biryani
+                            <span class="category-count">4 items</span>
+                        </div>
+                        <div class="menu-grid">
+                            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/56d93d1ce8b64ffacc97fd0c5bd27de925c05274.jpg" alt="Chicken Biryani" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Chicken Biryani</div>
+                            <div class="menu-item-price">₹340</div>
+                        </div>
+                        <div class="menu-item-desc">Fragrant basmati rice with spiced chicken</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Chicken Biryani&#39;, 340)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/13ab82e0997dd270f3122859aff7d433d6e22fd7.jpg" alt="Mutton Biryani" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Mutton Biryani</div>
+                            <div class="menu-item-price">₹420</div>
+                        </div>
+                        <div class="menu-item-desc">Slow-cooked mutton with aromatic rice</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Mutton Biryani&#39;, 420)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/27cdeeb871a0ca5b72d80fdd4e63d3afbbb7fcf5.jpg" alt="Veg Biryani" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Veg Biryani</div>
+                            <div class="menu-item-price">₹260</div>
+                        </div>
+                        <div class="menu-item-desc">Mixed vegetables with saffron-infused rice</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Veg Biryani&#39;, 260)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/2c82798c0c40563b60d83448be8b97daf8747dd9.jpg" alt="Egg Biryani" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Egg Biryani</div>
+                            <div class="menu-item-price">₹280</div>
+                        </div>
+                        <div class="menu-item-desc">Boiled eggs with flavored basmati rice</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Egg Biryani&#39;, 280)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                        </div>
+                    </div>
+                
+                    <div class="menu-category">
+                        <div class="category-title">
+                            Tandoori
+                            <span class="category-count">6 items</span>
+                        </div>
+                        <div class="menu-grid">
+                            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/4a97c8348349cde4a33a51e2c5f0db8e8c89fa20.jpg" alt="Tandoori Chicken" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Tandoori Chicken</div>
+                            <div class="menu-item-price">₹360</div>
+                        </div>
+                        <div class="menu-item-desc">Whole chicken marinated in yogurt and spices</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Tandoori Chicken&#39;, 360)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/e719b73f754d613887fce90f3d94446339d4e159.jpg" alt="Paneer Tikka" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Paneer Tikka</div>
+                            <div class="menu-item-price">₹280</div>
+                        </div>
+                        <div class="menu-item-desc">Grilled cottage cheese with bell peppers</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Paneer Tikka&#39;, 280)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/0ec0feee7538b2a7aa36c622ae80fad5f955b0b8.jpg" alt="Seekh Kebab" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Seekh Kebab</div>
+                            <div class="menu-item-price">₹320</div>
+                        </div>
+                        <div class="menu-item-desc">Minced lamb skewers cooked in tandoor</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Seekh Kebab&#39;, 320)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/cd8509ab73580de83d91d341097e119581b96931" alt="Tandoori Roti" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Tandoori Roti</div>
+                            <div class="menu-item-price">₹25</div>
+                        </div>
+                        <div class="menu-item-desc">Whole wheat bread baked in clay oven</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Tandoori Roti&#39;, 25)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/bef408e62b005c70afcae2fda7ef519475e53576.jpg" alt="Naan" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Naan</div>
+                            <div class="menu-item-price">₹40</div>
+                        </div>
+                        <div class="menu-item-desc">Soft leavened bread with butter</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Naan&#39;, 40)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/a48188fbf764834651ab4bd372fbca125d59555b.jpg" alt="Garlic Naan" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Garlic Naan</div>
+                            <div class="menu-item-price">₹60</div>
+                        </div>
+                        <div class="menu-item-desc">Naan topped with garlic and coriander</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Garlic Naan&#39;, 60)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                        </div>
+                    </div>
+                
+                    <div class="menu-category">
+                        <div class="category-title">
+                            Chinese
+                            <span class="category-count">4 items</span>
+                        </div>
+                        <div class="menu-grid">
+                            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/cdf5f35858e76e4b9f57f5c737b837198f1ad2c1.jpg" alt="Chilli Chicken" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Chilli Chicken</div>
+                            <div class="menu-item-price">₹300</div>
+                        </div>
+                        <div class="menu-item-desc">Indo-Chinese style spicy chicken</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Chilli Chicken&#39;, 300)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/76841796782bbdb36ad74ccfc89cfbafe04874bc.jpg" alt="Veg Manchurian" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Veg Manchurian</div>
+                            <div class="menu-item-price">₹220</div>
+                        </div>
+                        <div class="menu-item-desc">Crispy vegetable balls in tangy sauce</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Veg Manchurian&#39;, 220)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/1b5ad27ed4a22132b3d5026d41b727c01a242c55.jpg" alt="Hakka Noodles" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Hakka Noodles</div>
+                            <div class="menu-item-price">₹180</div>
+                        </div>
+                        <div class="menu-item-desc">Stir-fried noodles with vegetables</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Hakka Noodles&#39;, 180)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/8aadf38fad72a1f26dd89b3b1ced16eae71eb3ab.jpg" alt="Chicken Fried Rice" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Chicken Fried Rice</div>
+                            <div class="menu-item-price">₹240</div>
+                        </div>
+                        <div class="menu-item-desc">Rice tossed with chicken and eggs</div>
+                        <div class="menu-item-footer">
+                            <div class="non-veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Chicken Fried Rice&#39;, 240)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                        </div>
+                    </div>
+                
+                    <div class="menu-category">
+                        <div class="category-title">
+                            Desserts
+                            <span class="category-count">4 items</span>
+                        </div>
+                        <div class="menu-grid">
+                            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/9ffb71476adb3683e84f2d64dd8b4c89e82d932f.jpg" alt="Gulab Jamun" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Gulab Jamun</div>
+                            <div class="menu-item-price">₹80</div>
+                        </div>
+                        <div class="menu-item-desc">Soft fried dumplings in sugar syrup</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Gulab Jamun&#39;, 80)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/41d82379dd2c1c4004737d584f7bd1d0294f6a1a.jpg" alt="Rasmalai" loading="lazy">
+                        <span class="menu-item-badge">Popular</span>
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Rasmalai</div>
+                            <div class="menu-item-price">₹100</div>
+                        </div>
+                        <div class="menu-item-desc">Cottage cheese patties in sweetened milk</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Rasmalai&#39;, 100)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/b52cfbdd7001898755fdcc834e3236b7b934455d.jpg" alt="Kheer" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Kheer</div>
+                            <div class="menu-item-price">₹90</div>
+                        </div>
+                        <div class="menu-item-desc">Rice pudding with cardamom and nuts</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Kheer&#39;, 90)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="./apni rasoi_files/9307e45c7bd9e2c9994cc44dccbfc6b286341608.jpg" alt="Ice Cream" loading="lazy">
+                        
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">Ice Cream</div>
+                            <div class="menu-item-price">₹120</div>
+                        </div>
+                        <div class="menu-item-desc">Choice of vanilla, chocolate, or mango</div>
+                        <div class="menu-item-footer">
+                            <div class="veg-badge"></div>
+                            <button class="add-btn" onclick="addToCart(&#39;Ice Cream&#39;, 120)">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews Tab -->
+            <div id="reviews" class="tab-content">
+                <h2 class="section-title"><i class="fas fa-star"></i> Customer Reviews</h2>
+                
+                <div class="review-summary">
+                    <div class="review-big-rating">
+                        <div class="review-big-number">4.5</div>
+                        <div class="review-big-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="review-big-count">2,000+ ratings</div>
+                    </div>
+                    <div class="review-bars">
+                        <div class="review-bar">
+                            <span class="review-bar-label">5 ★</span>
+                            <div class="review-bar-track"><div class="review-bar-fill" style="width: 70%"></div></div>
+                            <span class="review-bar-count">1.4k</span>
+                        </div>
+                        <div class="review-bar">
+                            <span class="review-bar-label">4 ★</span>
+                            <div class="review-bar-track"><div class="review-bar-fill" style="width: 20%"></div></div>
+                            <span class="review-bar-count">400</span>
+                        </div>
+                        <div class="review-bar">
+                            <span class="review-bar-label">3 ★</span>
+                            <div class="review-bar-track"><div class="review-bar-fill" style="width: 6%"></div></div>
+                            <span class="review-bar-count">120</span>
+                        </div>
+                        <div class="review-bar">
+                            <span class="review-bar-label">2 ★</span>
+                            <div class="review-bar-track"><div class="review-bar-fill" style="width: 2%"></div></div>
+                            <span class="review-bar-count">40</span>
+                        </div>
+                        <div class="review-bar">
+                            <span class="review-bar-label">1 ★</span>
+                            <div class="review-bar-track"><div class="review-bar-fill" style="width: 2%"></div></div>
+                            <span class="review-bar-count">40</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="reviewsContainer">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">R</div>
+                            <div class="reviewer-info">
+                                <h4>Rahul Sharma</h4>
+                                <p>2 days ago</p>
+                            </div>
+                        </div>
+                        <span class="review-rating">5.0 ★</span>
+                    </div>
+                    <p class="review-text">Absolutely amazing butter chicken! The flavors are authentic and the service is top-notch. Been coming here for 5 years now.</p>
+                    <div class="review-tags">
+                        <span class="review-tag">Butter Chicken</span><span class="review-tag">Great Service</span>
+                    </div>
+                </div>
+            
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">P</div>
+                            <div class="reviewer-info">
+                                <h4>Priya Gupta</h4>
+                                <p>1 week ago</p>
+                            </div>
+                        </div>
+                        <span class="review-rating">5.0 ★</span>
+                    </div>
+                    <p class="review-text">Best biryani in Jammu! The mutton biryani is to die for. Perfectly spiced and generous portions. Highly recommended!</p>
+                    <div class="review-tags">
+                        <span class="review-tag">Biryani</span><span class="review-tag">Value for Money</span>
+                    </div>
+                </div>
+            
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">A</div>
+                            <div class="reviewer-info">
+                                <h4>Amit Kumar</h4>
+                                <p>2 weeks ago</p>
+                            </div>
+                        </div>
+                        <span class="review-rating">4.0 ★</span>
+                    </div>
+                    <p class="review-text">Great ambiance and delicious food. The tandoori chicken was perfectly cooked. Slightly pricey but worth the quality.</p>
+                    <div class="review-tags">
+                        <span class="review-tag">Tandoori</span><span class="review-tag">Ambiance</span>
+                    </div>
+                </div>
+            
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">S</div>
+                            <div class="reviewer-info">
+                                <h4>Sneha Verma</h4>
+                                <p>3 weeks ago</p>
+                            </div>
+                        </div>
+                        <span class="review-rating">5.0 ★</span>
+                    </div>
+                    <p class="review-text">Love the paneer tikka masala! As a vegetarian, I appreciate the variety of options. The garlic naan is a must-try.</p>
+                    <div class="review-tags">
+                        <span class="review-tag">Veg Options</span><span class="review-tag">Naan</span>
+                    </div>
+                </div>
+            
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">V</div>
+                            <div class="reviewer-info">
+                                <h4>Vikram Singh</h4>
+                                <p>1 month ago</p>
+                            </div>
+                        </div>
+                        <span class="review-rating">4.0 ★</span>
+                    </div>
+                    <p class="review-text">Consistent quality over the years. The dal makhani reminds me of home. Friendly staff and quick service.</p>
+                    <div class="review-tags">
+                        <span class="review-tag">Dal Makhani</span><span class="review-tag">Consistent</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Photos Tab -->
+            <div id="photos" class="tab-content">
+                <h2 class="section-title"><i class="fas fa-images"></i> Photo Gallery</h2>
+                <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="gallery-item" style="grid-column: span 2; grid-row: span 2;"><img src="./apni rasoi_files/5d8fa5ee070992863c2ab9b0fb7c29a6f8dce028.jpg" alt="Thali"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/04dc0e15d837b826b9bca19ab843a012e8924d46.jpg" alt="Butter Chicken"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/4a97c8348349cde4a33a51e2c5f0db8e8c89fa20.jpg" alt="Tandoori Chicken"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/56d93d1ce8b64ffacc97fd0c5bd27de925c05274.jpg" alt="Chicken Biryani"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/450b46b738fa1a91ee447977e43c0fda2d7410d3.jpg" alt="Paneer Tikka Masala"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/1fa8cbdfba6abbc6a4ac89d25571d591b925a0f1.jpg" alt="Dal Makhani"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/1b5ad27ed4a22132b3d5026d41b727c01a242c55.jpg" alt="Hakka Noodles"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/9ffb71476adb3683e84f2d64dd8b4c89e82d932f.jpg" alt="Gulab Jamun"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/dd2b84e7b68922a3e8801247d3f3a585ba4eb94e.jpg" alt="Restaurant Interior"></div>
+                    <div class="gallery-item"><img src="./apni rasoi_files/53eba05b81003481b811889de6e7d8f7e49e13ff.JPG" alt="Dining Area"></div>
+                </div>
+            </div>
+
+            <!-- About Tab -->
+            <div id="about" class="tab-content">
+                <h2 class="section-title"><i class="fas fa-info-circle"></i> About APNI RASOI</h2>
+                
+                <div class="about-card">
+                    <p class="about-text">
+                        Founded in 2014, <strong>APNI RASOI</strong> has been serving the people of Jammu with authentic Indian cuisine for over a decade. What started as a small family kitchen has grown into one of the most beloved restaurants in the city, known for our commitment to quality, tradition, and exceptional hospitality.
+                    </p>
+                    <p class="about-text">
+                        Our chefs bring decades of experience in North Indian, Mughlai, and Tandoori cooking, using time-honored recipes passed down through generations. We source the freshest ingredients daily and prepare every dish with the same care and attention that we would for our own family.
+                    </p>
+                    
+                    <div class="highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-award"></i></div>
+                            <div>
+                                <div class="highlight-text">Award Winning</div>
+                                <div class="highlight-sub">Best North Indian Restaurant 2023</div>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-leaf"></i></div>
+                            <div>
+                                <div class="highlight-text">Fresh Ingredients</div>
+                                <div class="highlight-sub">Sourced locally every morning</div>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-fire-burner"></i></div>
+                            <div>
+                                <div class="highlight-text">Traditional Tandoor</div>
+                                <div class="highlight-sub">Authentic clay oven cooking</div>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                            <div>
+                                <div class="highlight-text">Family Friendly</div>
+                                <div class="highlight-sub">Welcoming atmosphere for all</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title"><i class="fas fa-utensils"></i> Cuisines</h2>
+                <div class="about-card">
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="filter-chip">North Indian</span>
+                        <span class="filter-chip">Mughlai</span>
+                        <span class="filter-chip">Tandoori</span>
+                        <span class="filter-chip">Chinese</span>
+                        <span class="filter-chip">Biryani</span>
+                        <span class="filter-chip">Street Food</span>
+                        <span class="filter-chip">Desserts</span>
+                        <span class="filter-chip">Beverages</span>
+                    </div>
+                </div>
+
+                <h2 class="section-title"><i class="fas fa-tags"></i> Facilities</h2>
+                <div class="about-card">
+                    <div class="highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-wifi"></i></div>
+                            <div class="highlight-text">Free Wi-Fi</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-car"></i></div>
+                            <div class="highlight-text">Parking Available</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-wheelchair"></i></div>
+                            <div class="highlight-text">Wheelchair Accessible</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-music"></i></div>
+                            <div class="highlight-text">Live Music (Weekends)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">Call for Reservations</h3>
+                <div class="sidebar-info">
+                    <div class="sidebar-row">
+                        <div class="sidebar-icon"><i class="fas fa-phone"></i></div>
+                        <div class="sidebar-text">
+                            <h4>+91 98765 43210</h4>
+                            <p>Available 10 AM - 10 PM</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-row">
+                        <div class="sidebar-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="sidebar-text">
+                            <h4>info@apnirasoi.com</h4>
+                            <p>For inquiries &amp; events</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">Opening Hours</h3>
+                <div class="timing-row">
+                    <span class="timing-day">Monday</span>
+                    <span class="timing-hours">11:00 AM - 11:00 PM</span>
+                </div>
+                <div class="timing-row">
+                    <span class="timing-day">Tuesday</span>
+                    <span class="timing-hours">11:00 AM - 11:00 PM</span>
+                </div>
+                <div class="timing-row">
+                    <span class="timing-day">Wednesday</span>
+                    <span class="timing-hours">11:00 AM - 11:00 PM</span>
+                </div>
+                <div class="timing-row">
+                    <span class="timing-day">Thursday</span>
+                    <span class="timing-hours">11:00 AM - 11:00 PM</span>
+                </div>
+                <div class="timing-row">
+                    <span class="timing-day">Friday</span>
+                    <span class="timing-hours">11:00 AM - 11:00 PM</span>
+                </div>
+                <div class="timing-row">
+                    <span class="timing-day">Saturday</span>
+                    <span class="timing-hours open">11:00 AM - 11:30 PM</span>
+                </div>
+                <div class="timing-row">
+                    <span class="timing-day">Sunday</span>
+                    <span class="timing-hours open">11:00 AM - 11:30 PM</span>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">Location</h3>
+                <div class="sidebar-info">
+                    <div class="sidebar-row">
+                        <div class="sidebar-icon"><i class="fas fa-map-pin"></i></div>
+                        <div class="sidebar-text">
+                            <h4>APNI RASOI</h4>
+                            <p>Shop No. 42, Main Market, Gandhi Nagar, Jammu, J&amp;K - 180004</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <i class="fas fa-map-location-dot"></i>
+                    <span>View on Map</span>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">Average Cost</h3>
+                <div class="sidebar-info">
+                    <div class="sidebar-row">
+                        <div class="sidebar-icon"><i class="fas fa-wallet"></i></div>
+                        <div class="sidebar-text">
+                            <h4>₹800 for two</h4>
+                            <p>Exclusive of taxes &amp; charges</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-divider"></div>
+                <div class="sidebar-info">
+                    <div class="sidebar-row">
+                        <div class="sidebar-icon"><i class="fas fa-credit-card"></i></div>
+                        <div class="sidebar-text">
+                            <h4>Payment Options</h4>
+                            <p>Cash, UPI, Cards, Digital Wallets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-title">Hungry? Order Now!</div>
+        <div class="cta-subtitle">Get your favorite dishes delivered hot and fresh to your doorstep</div>
+        <div class="cta-buttons">
+            <button class="btn btn-white btn-large" onclick="openOrderModal()">
+                <i class="fas fa-bag-shopping"></i>
+                Order Online
+            </button>
+            <button class="btn btn-transparent btn-large" onclick="showToast(&#39;Reservation feature coming soon!&#39;)">
+                <i class="fas fa-calendar-check"></i>
+                Book a Table
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-brand">
+                        <i class="fas fa-utensils"></i>
+                        APNI RASOI
+                    </div>
+                    <p class="footer-desc">Serving authentic Indian cuisine with love and tradition since 2014. Your satisfaction is our pride.</p>
+                    <div class="footer-social">
+                        <a href="file:///C:/Users/HP/Desktop/first.html#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="file:///C:/Users/HP/Desktop/first.html#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="file:///C:/Users/HP/Desktop/first.html#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="file:///C:/Users/HP/Desktop/first.html#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="file:///C:/Users/HP/Desktop/first.html#" onclick="switchTab(&#39;menu&#39;)">Menu</a>
+                        <a href="file:///C:/Users/HP/Desktop/first.html#" onclick="switchTab(&#39;about&#39;)">About Us</a>
+                        <a href="file:///C:/Users/HP/Desktop/first.html#" onclick="switchTab(&#39;reviews&#39;)">Reviews</a>
+                        <a href="file:///C:/Users/HP/Desktop/first.html#" onclick="switchTab(&#39;photos&#39;)">Gallery</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Support</h4>
+                    <div class="footer-links">
+                        <a href="file:///C:/Users/HP/Desktop/first.html#">Contact Us</a>
+                        <a href="file:///C:/Users/HP/Desktop/first.html#">FAQs</a>
+                        <a href="file:///C:/Users/HP/Desktop/first.html#">Privacy Policy</a>
+                        <a href="file:///C:/Users/HP/Desktop/first.html#">Terms of Service</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-links">
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                        <a href="mailto:info@apnirasoi.com">info@apnirasoi.com</a>
+                        <a href="file:///C:/Users/HP/Desktop/first.html#">Gandhi Nagar, Jammu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 APNI RASOI. All rights reserved. Designed with ❤️ in Jammu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Your Order</h3>
+                <button class="modal-close" onclick="closeOrderModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems">
+                    <p style="text-align: center; color: var(--text-light); padding: 40px 0;">Your cart is empty. Add items from the menu!</p>
+                </div>
+                <div class="cart-total" id="cartTotal" style="display: none;">
+                    <span>Total</span>
+                    <span class="cart-total-value" id="totalValue">₹0</span>
+                </div>
+                <div class="form-group" style="margin-top: 20px;">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-input" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Phone</label>
+                    <input type="tel" class="form-input" placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Delivery Address</label>
+                    <input type="text" class="form-input" placeholder="Enter delivery address">
+                </div>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 10px; justify-content: center;" onclick="placeOrder()">
+                    <i class="fas fa-check"></i>
+                    Place Order
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Item added to cart!</span>
+    </div>
+
+    <script>
+        // Menu Data with Real Photos
+        const menuData = {
+            'North Indian': [
+                { name: 'Butter Chicken', price: 380, desc: 'Creamy tomato-based curry with tender chicken pieces', veg: false, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/www.indianhealthyrecipes.com/04dc0e15d837b826b9bca19ab843a012e8924d46.jpg' },
+                { name: 'Paneer Tikka Masala', price: 320, desc: 'Cottage cheese cubes in rich spiced gravy', veg: true, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/www.cookwithmanali.com/450b46b738fa1a91ee447977e43c0fda2d7410d3.jpg' },
+                { name: 'Dal Makhani', price: 240, desc: 'Creamy black lentils slow-cooked overnight', veg: true, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/sinfullyspicy.com/1fa8cbdfba6abbc6a4ac89d25571d591b925a0f1.jpg' },
+                { name: 'Palak Paneer', price: 300, desc: 'Fresh spinach and cottage cheese curry', veg: true, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/www.cookwithmanali.com/129b1a84c583b710a66f071f54d012b056834fa6.jpg' },
+                { name: 'Kadhai Chicken', price: 360, desc: 'Spicy chicken cooked in traditional kadhai', veg: false, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/www.indianhealthyrecipes.com/5b0ca12da5f6e23d07e3829e3b0ff4935f883cfa.jpg' },
+                { name: 'Malai Kofta', price: 280, desc: 'Cottage cheese dumplings in creamy gravy', veg: true, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/www.thecuriouschickpea.com/6f6d553fc2075a45409c8a9b597c7d6cbc6656a6.webp' }
+            ],
+            'Biryani': [
+                { name: 'Chicken Biryani', price: 340, desc: 'Fragrant basmati rice with spiced chicken', veg: false, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/www.indianhealthyrecipes.com/56d93d1ce8b64ffacc97fd0c5bd27de925c05274.jpg' },
+                { name: 'Mutton Biryani', price: 420, desc: 'Slow-cooked mutton with aromatic rice', veg: false, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/images.getrecipekit.com/13ab82e0997dd270f3122859aff7d433d6e22fd7.jpg' },
+                { name: 'Veg Biryani', price: 260, desc: 'Mixed vegetables with saffron-infused rice', veg: true, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/www.indianhealthyrecipes.com/27cdeeb871a0ca5b72d80fdd4e63d3afbbb7fcf5.jpg' },
+                { name: 'Egg Biryani', price: 280, desc: 'Boiled eggs with flavored basmati rice', veg: false, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/foreignfork.com/2c82798c0c40563b60d83448be8b97daf8747dd9.jpg' }
+            ],
+            'Tandoori': [
+                { name: 'Tandoori Chicken', price: 360, desc: 'Whole chicken marinated in yogurt and spices', veg: false, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/www.indianhealthyrecipes.com/4a97c8348349cde4a33a51e2c5f0db8e8c89fa20.jpg' },
+                { name: 'Paneer Tikka', price: 280, desc: 'Grilled cottage cheese with bell peppers', veg: true, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/carveyourcraving.com/e719b73f754d613887fce90f3d94446339d4e159.jpg' },
+                { name: 'Seekh Kebab', price: 320, desc: 'Minced lamb skewers cooked in tandoor', veg: false, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/www.allrecipes.com/0ec0feee7538b2a7aa36c622ae80fad5f955b0b8.jpg' },
+                { name: 'Tandoori Roti', price: 25, desc: 'Whole wheat bread baked in clay oven', veg: true, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/dww3ueizok6z0.cloudfront.net/cd8509ab73580de83d91d341097e119581b96931' },
+                { name: 'Naan', price: 40, desc: 'Soft leavened bread with butter', veg: true, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/nishkitchen.com/bef408e62b005c70afcae2fda7ef519475e53576.jpg' },
+                { name: 'Garlic Naan', price: 60, desc: 'Naan topped with garlic and coriander', veg: true, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/cdn.tasteatlas.com/a48188fbf764834651ab4bd372fbca125d59555b.jpg' }
+            ],
+            'Chinese': [
+                { name: 'Chilli Chicken', price: 300, desc: 'Indo-Chinese style spicy chicken', veg: false, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/www.islandsmile.org/cdf5f35858e76e4b9f57f5c737b837198f1ad2c1.jpg' },
+                { name: 'Veg Manchurian', price: 220, desc: 'Crispy vegetable balls in tangy sauce', veg: true, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/www.carveyourcraving.com/76841796782bbdb36ad74ccfc89cfbafe04874bc.jpg' },
+                { name: 'Hakka Noodles', price: 180, desc: 'Stir-fried noodles with vegetables', veg: true, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/www.indianhealthyrecipes.com/1b5ad27ed4a22132b3d5026d41b727c01a242c55.jpg' },
+                { name: 'Chicken Fried Rice', price: 240, desc: 'Rice tossed with chicken and eggs', veg: false, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/www.nishkitchen.com/8aadf38fad72a1f26dd89b3b1ced16eae71eb3ab.jpg' }
+            ],
+            'Desserts': [
+                { name: 'Gulab Jamun', price: 80, desc: 'Soft fried dumplings in sugar syrup', veg: true, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/www.indianhealthyrecipes.com/9ffb71476adb3683e84f2d64dd8b4c89e82d932f.jpg' },
+                { name: 'Rasmalai', price: 100, desc: 'Cottage cheese patties in sweetened milk', veg: true, popular: true, img: 'https://kimi-web-img.moonshot.cn/img/cdn-abndc.nitrocdn.com/41d82379dd2c1c4004737d584f7bd1d0294f6a1a.jpg' },
+                { name: 'Kheer', price: 90, desc: 'Rice pudding with cardamom and nuts', veg: true, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/www.lotusfoods.com/b52cfbdd7001898755fdcc834e3236b7b934455d.jpg' },
+                { name: 'Ice Cream', price: 120, desc: 'Choice of vanilla, chocolate, or mango', veg: true, popular: false, img: 'https://kimi-web-img.moonshot.cn/img/thumbs.dreamstime.com/9307e45c7bd9e2c9994cc44dccbfc6b286341608.jpg' }
+            ]
+        };
+
+        const reviewsData = [
+            { name: 'Rahul Sharma', rating: 5, date: '2 days ago', text: 'Absolutely amazing butter chicken! The flavors are authentic and the service is top-notch. Been coming here for 5 years now.', tags: ['Butter Chicken', 'Great Service'] },
+            { name: 'Priya Gupta', rating: 5, date: '1 week ago', text: 'Best biryani in Jammu! The mutton biryani is to die for. Perfectly spiced and generous portions. Highly recommended!', tags: ['Biryani', 'Value for Money'] },
+            { name: 'Amit Kumar', rating: 4, date: '2 weeks ago', text: 'Great ambiance and delicious food. The tandoori chicken was perfectly cooked. Slightly pricey but worth the quality.', tags: ['Tandoori', 'Ambiance'] },
+            { name: 'Sneha Verma', rating: 5, date: '3 weeks ago', text: 'Love the paneer tikka masala! As a vegetarian, I appreciate the variety of options. The garlic naan is a must-try.', tags: ['Veg Options', 'Naan'] },
+            { name: 'Vikram Singh', rating: 4, date: '1 month ago', text: 'Consistent quality over the years. The dal makhani reminds me of home. Friendly staff and quick service.', tags: ['Dal Makhani', 'Consistent'] }
+        ];
+
+        let cart = [];
+        let currentFilter = 'all';
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderPopularDishes();
+            renderMenu();
+            renderReviews();
+        });
+
+        function renderPopularDishes() {
+            const popular = [];
+            Object.values(menuData).forEach(cat => {
+                popular.push(...cat.filter(item => item.popular));
+            });
+            const container = document.getElementById('popularDishes');
+            container.innerHTML = popular.slice(0, 6).map(item => createMenuItemHTML(item)).join('');
+        }
+
+        function renderMenu() {
+            const container = document.getElementById('menuContainer');
+            let html = '';
+            
+            Object.entries(menuData).forEach(([category, items]) => {
+                const filtered = currentFilter === 'all' ? items : items.filter(item => {
+                    if (currentFilter === 'veg') return item.veg;
+                    if (currentFilter === 'non-veg') return !item.veg;
+                    if (currentFilter === 'biryani') return category === 'Biryani';
+                    if (currentFilter === 'tandoori') return category === 'Tandoori';
+                    if (currentFilter === 'dessert') return category === 'Desserts';
+                    return true;
+                });
+                
+                if (filtered.length === 0) return;
+                
+                html += `
+                    <div class="menu-category">
+                        <div class="category-title">
+                            ${category}
+                            <span class="category-count">${filtered.length} items</span>
+                        </div>
+                        <div class="menu-grid">
+                            ${filtered.map(item => createMenuItemHTML(item)).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html || '<p style="text-align: center; color: var(--text-light); padding: 40px;">No items found for this filter.</p>';
+        }
+
+        function createMenuItemHTML(item) {
+            return `
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="${item.img}" alt="${item.name}" loading="lazy">
+                        ${item.popular ? '<span class="menu-item-badge">Popular</span>' : ''}
+                    </div>
+                    <div class="menu-item-body">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">${item.name}</div>
+                            <div class="menu-item-price">₹${item.price}</div>
+                        </div>
+                        <div class="menu-item-desc">${item.desc}</div>
+                        <div class="menu-item-footer">
+                            <div class="${item.veg ? 'veg-badge' : 'non-veg-badge'}"></div>
+                            <button class="add-btn" onclick="addToCart('${item.name}', ${item.price})">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderReviews() {
+            const container = document.getElementById('reviewsContainer');
+            container.innerHTML = reviewsData.map(review => `
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">${review.name.charAt(0)}</div>
+                            <div class="reviewer-info">
+                                <h4>${review.name}</h4>
+                                <p>${review.date}</p>
+                            </div>
+                        </div>
+                        <span class="review-rating">${review.rating}.0 ★</span>
+                    </div>
+                    <p class="review-text">${review.text}</p>
+                    <div class="review-tags">
+                        ${review.tags.map(tag => `<span class="review-tag">${tag}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterMenu(filter) {
+            currentFilter = filter;
+            document.querySelectorAll('.menu-filters .filter-chip').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            renderMenu();
+        }
+
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+            
+            if (tabName === 'menu') {
+                document.querySelector('.tabs-section').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function scrollToMenu() {
+            switchTab('menu');
+            document.querySelector('.tabs-section').scrollIntoView({ behavior: 'smooth' });
+            document.querySelectorAll('.tab')[1].classList.add('active');
+            document.querySelectorAll('.tab')[0].classList.remove('active');
+        }
+
+        function addToCart(name, price) {
+            const existing = cart.find(item => item.name === name);
+            if (existing) {
+                existing.qty++;
+            } else {
+                cart.push({ name, price, qty: 1 });
+            }
+            updateCartUI();
+            showToast(`${name} added to cart!`);
+        }
+
+        function updateCartUI() {
+            const container = document.getElementById('cartItems');
+            const totalEl = document.getElementById('cartTotal');
+            const totalValueEl = document.getElementById('totalValue');
+            
+            if (cart.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: var(--text-light); padding: 40px 0;">Your cart is empty. Add items from the menu!</p>';
+                totalEl.style.display = 'none';
+                return;
+            }
+            
+            let total = 0;
+            container.innerHTML = cart.map(item => {
+                total += item.price * item.qty;
+                return `
+                    <div class="cart-item">
+                        <div class="cart-item-info">
+                            <h4>${item.name}</h4>
+                            <p>₹${item.price} x ${item.qty}</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span class="cart-item-price">₹${item.price * item.qty}</span>
+                            <button onclick="removeFromCart('${item.name}')" style="background: none; border: none; color: var(--primary); cursor: pointer; font-size: 16px;">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            totalValueEl.textContent = `₹${total}`;
+            totalEl.style.display = 'flex';
+        }
+
+        function removeFromCart(name) {
+            cart = cart.filter(item => item.name !== name);
+            updateCartUI();
+        }
+
+        function openOrderModal() {
+            document.getElementById('orderModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function placeOrder() {
+            if (cart.length === 0) {
+                showToast('Please add items to your cart first!');
+                return;
+            }
+            const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+            showToast(`Order placed successfully! Total: ₹${total}`);
+            cart = [];
+            updateCartUI();
+            closeOrderModal();
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMessage').textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        function showLogin() {
+            showToast('Login feature coming soon!');
+        }
+
+        function showSignup() {
+            showToast('Sign up feature coming soon!');
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            if (query.length < 2) return;
+            
+            const allItems = [];
+            Object.values(menuData).forEach(cat => allItems.push(...cat));
+            const filtered = allItems.filter(item => item.name.toLowerCase().includes(query));
+            
+            if (filtered.length > 0) {
+                switchTab('menu');
+                document.querySelectorAll('.tab')[1].classList.add('active');
+                document.querySelectorAll('.tab')[0].classList.remove('active');
+                
+                const container = document.getElementById('menuContainer');
+                container.innerHTML = `
+                    <div class="menu-category">
+                        <div class="category-title">Search Results <span class="category-count">${filtered.length} items</span></div>
+                        <div class="menu-grid">${filtered.map(item => createMenuItemHTML(item)).join('')}</div>
+                    </div>
+                `;
+            }
+        });
+
+        // Close modal on overlay click
+        document.getElementById('orderModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('orderModal')) {
+                closeOrderModal();
+            }
+        });
+    </script>
+
+</body></html>
